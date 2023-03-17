@@ -136,48 +136,47 @@ img {
 /*  MOBILE RESPONSIVE QUERY */
 @media (max-width: 480px) {
     /*  SECTION LESSONS */
-    .lessons.text-center .container{
+    .lessons .container{
         max-width: var(--mobile-width-size);
     }
-    .lessons.text-center .container .row {
+    .lessons .row {
         display: flex;
         flex-direction: column;
     }
-    .lessons.text-center .row .col:first-child {
+    .lessons .row .col:first-child {
         margin-bottom: var(--mobile-col-margin);
     }
-    .lessons.text-center .container .row .col {
+    .lessons .row .col {
         width: 100%;
     }
 
     /*  SECTION STEPS  */
-    .steps.text-center .container{
+    .steps .container{
         max-width: var(--mobile-width-size);
     }
-    .steps.text-center .container .row {
+    .steps .row {
         display: flex;
         flex-direction: column;
     }
-    .steps.text-center .row .col:nth-child(-n +2) {
-        margin-bottom: var(--mobile-col-margin);;
-    }
-    .steps.text-center .container .row .col {
+    .steps .row .col {
         width: 100%;
+    }
+    .steps .row .col:nth-child(-n +2) {
+        margin-bottom: var(--mobile-col-margin);;
     }
 
     /*  SECTION WHY-US  */
     .why-us .container{
         max-width: var(--mobile-width-size);
     }
-    .why-us .container .row{
-        display: flex;
+    .why-us .row{
         flex-direction: column;
         text-align: center;
     }
-    .why-us .container .row .col {
+    .why-us .row .col {
         width: 100%;
     }
-    .why-us .container .row .col:first-child {
+    .why-us .row .col:first-child {
         margin-bottom: var(--mobile-col-margin);
     }
 
