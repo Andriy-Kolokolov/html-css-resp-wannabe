@@ -127,3 +127,22 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+:root {
+    --mobile-width-size: 480px;
+    --tablet-width-size: 768px;
+}
+@media (max-width: 480px) {
+    .lessons.text-center .container{
+        max-width: var(--mobile-width-size);
+    }
+    .lessons.text-center .container .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .lessons.text-center .row .col:first-child{
+        margin-bottom: 5rem;
+    }
+    .lessons.text-center .container .row .col {
+        width: 100%;
+    }
+}
