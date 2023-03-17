@@ -179,5 +179,22 @@ img {
     .why-us .row .col:first-child {
         margin-bottom: var(--mobile-col-margin);
     }
+}
 
+/*  TABLET RESPONSIVE QUERY */
+@media (min-width: 481px) and (max-width: 768px) {
+    /*  SECTION LESSONS */
+    .lessons .container{
+        max-width: var(--tablet-width-size);
+    }
+
+    /*  SECTION STEPS */
+    .steps .container{
+        max-width: var(--tablet-width-size);
+    }
+
+    /*  SECTION STEPS */
+    .why-us .container{
+        max-width: var(--tablet-width-size);
+    }
 }
