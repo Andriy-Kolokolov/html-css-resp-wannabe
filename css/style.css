@@ -134,7 +134,7 @@ img {
 }
 
 /*  MOBILE RESPONSIVE QUERY */
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     /*  SECTION LESSONS */
     .lessons .container{
         max-width: var(--mobile-width-size);
@@ -182,7 +182,7 @@ img {
 }
 
 /*  TABLET RESPONSIVE QUERY */
-@media (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
     /*  SECTION LESSONS */
     .lessons .container{
         max-width: var(--tablet-width-size);
@@ -196,5 +196,11 @@ img {
     /*  SECTION STEPS */
     .why-us .container{
         max-width: var(--tablet-width-size);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 100vw) {
+    .container {
+        max-width: 100%;
     }
 }
